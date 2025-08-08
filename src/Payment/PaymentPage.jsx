@@ -47,11 +47,13 @@ const CheckOut = ({ totalPrice, statePayment }) => {
                 ],
               });
             },
-            onApprove: (data, actions) => {
-              return actions.order.capture().then(() => {
-                clearCart();
+            onApprove: async (data, actions) => {
+              return await actions.order.capture().then(() => {
                 setShowCheckout(false);
-                alert("Transaction completed ...");
+                clearCart();
+                setTimeout(() => {
+                  alert("Transaction completed ...");
+                },1800)
               });
             },
             onError: (err) => {
