@@ -1,0 +1,53 @@
+@import "tailwindcss";
+* {
+  padding: 0%;
+  margin: 0%;
+}
+body {
+  font-family: sans-serif;
+}
+/* Component Products */
+section .cart-name {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-clamp: 1;
+}
+section .cart-brand {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-clamp: 1;
+}
+section .cart-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-clamp: 2;
+  height: 40px;
+}
+/* Animation Empty Cart */
+section .cart-icon {
+  animation: cart 2s linear infinite;
+}
+@keyframes cart {
+  0% {
+    transform: translateY(-8px);
+    rotate: 0deg;
+  }
+  35% {
+    transform: translateY(4px);
+    rotate: -7deg;
+  }
+  65% {
+    transform: translateY(8px);
+    rotate: 7deg;
+  }
+  100% {
+    transform: translateY(-8px);
+    rotate: 0deg;
+  }
+}
