@@ -87,7 +87,7 @@ const Login = () => {
 
   return (
     <>
-      <section className="bg-gray-100 md:!py-20 !py-25">
+      <section className="bg-gray-100 md:!py-20 !py-27">
         <div className="!px-[5%] flex items-center justify-center flex-col gap-5">
           <div className="flex flex-col items-center gap-2">
             <h2 className="text-[28px] font-extrabold">Login</h2>
