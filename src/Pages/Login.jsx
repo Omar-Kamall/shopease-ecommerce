@@ -73,10 +73,15 @@ const Login = () => {
         Cookies.set("userName", user.displayName || "User", {
           secure: true,
         });
-        navigate("/");
+        setTimeout(() => {
+          alert("Login Sucssesfuly ..!");
+          navigate("/");
+        },2000)
       })
       .catch((error) => {
-        alert("Login Failed: " + error.message);
+        setTimeout(() => {
+          alert("Login Failed: " + error.message);
+        },2000)
       });
   };
 
